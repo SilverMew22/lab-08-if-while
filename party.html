@@ -6,9 +6,21 @@
   </head>
   <body>
     <script>
-
-      console.log("Your two dice add up to: " + sum);
-      document.write("Your two dice add up to: " + sum);
+      var userinput = prompt ("Let's Party... How long ‘til the party?");
+      var usernum = parseInt(userinput,10);
+    if (usernum < 1){
+       console.log("Party Now!!!");
+       document.write("Party Now!!!");
+     }else{
+       for(i = usernum; i >= 1; i = i - 1){
+         console.log(i);
+         document.write(i + "<br>");
+         if (i==1){
+           console.log("Party Time!!!");
+           document.write("Party Time!!!");
+         }
+       }
+       }
     </script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var userstring = prompt("Give me a number between 1 and 3, and I'll predict your future...");
+      var usernumber = parseInt(userstring, 10);
+      if (usernumber == 1)
+      {
+        console.log("You'll do the moonwalk.");
+        document.write("You'll do the moonwalk. <br>");
+      }
+      else if(usernumber == 2)
+      {
+        console.log("You'll step on a lego.");
+        document.write("You'll step on a lego. <br>");
+      }
+      else if(usernumber == 3)
+      {
+        console.log("You are doomed you'll go to Hell.");
+        document.write("You are doomed you'll go to Hell. <br>");
+      }
+      else
+      {
+        console.log("Please follow directions.");
+        document.write("Please follow directions. <br>");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var highestnum=0;
+      for(i = 0; i < 4; i = i + 1){
+      // i (current value of i) = i (previous) + 1
+      var userinput = prompt ("number please... ");
+      var usernum = parseInt(userinput,10);
+      console.log("The user entered " + usernum);
+      if(usernum > highestnum){
+        highestnum = usernum;
+        //current value of usernum is the current highest Number
+        console.log("Updating higest numer to: " + highestnum);
+      }else{
+        console.log("This is not the higest number!");
+      }
+    }
+    console.log("This higest number is " + highestnum);
+    </script>
+  </body>
+</html>

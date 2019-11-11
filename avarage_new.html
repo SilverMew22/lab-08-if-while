@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+var average = 0;
+var sum = 0;
+// each time we reset the page it goes back to zero
+for(i = 0; i < 4; i = i + 1){
+// i (current value of i) = i (previous) + 1
+var userinput = prompt ("number please... ");
+var usernum = parseInt(userinput,10);
+//convert user input into a number to add to sum
+sum = sum + usernum;
+//sum is usernum added to sum.
+console.log("User input is: " + usernum + " and the current sum is " + sum);}
+average = sum/4;
+console.log("The average is " + average);
+    </script>
+  </body>
+</html>
